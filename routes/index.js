@@ -4,8 +4,15 @@ var path = require('path');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  //res.render('index', { title: 'Express' });
-  res.sendFile((path.join(__dirname, "../views/index.html")));
+  res.render('index', { title: 'Collins Ilo' });
+  // res.sendFile((path.join(__dirname, "../views/index.html")));
 });
+
+// router.get('/', function(req, res, next) {
+//   //res.render('index', { title: 'Express' });
+//   res.sendFile((path.join(__dirname, "../views/contact.html")));
+// });
+
+
 
 module.exports = router;

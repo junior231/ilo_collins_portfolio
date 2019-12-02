@@ -433,6 +433,8 @@ span{
 
    }
 
+}
+
 .mainFooter {
     margin-bottom: 40px;
     border-top: solid 0.5px rgb(119, 119, 253);
@@ -947,48 +949,47 @@ span{
           width: 60%;
       }
 
-      @media screen and (min-width: 420px) {
-          .heading {
-              h2 {
-                  font-size: 28px;
-                  font-weight: bold;
-              }
+@media screen and (min-width: 420px) {
+    .heading {
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+        }
 
-              p {
-                  font-size: 22px;
-              }
-          }
-      }
-
-      @media screen and (min-width: 520px) {
-          /* Create two columns that float next to eachother */
-            .column {
-                float: left;
-                width: 50%;
-                margin-top: 6px;
-                padding: 20px;
-
-                img {
-                    margin-top: 40px;
-                }
-            }
-  
-         /* Clear floats after the columns */
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-                }
-
-
-        @media screen and (min-width: 640px) {
-             input[type=submit] {
-                width: 60%;
-            }
-
-            img {
-                margin-right: 20px;
-            }
+        p {
+            font-size: 22px;
         }
     }
+}
+
+@media screen and (min-width: 520px) {
+    /* Create two columns that float next to eachother */
+    .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+
+        img {
+            margin-top: 40px;
+        }
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+@media screen and (min-width: 640px) {
+        input[type=submit] {
+        width: 60%;
+    }
+
+    img {
+        margin-right: 20px;
+    }
+}
