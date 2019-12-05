@@ -4,14 +4,22 @@ var path = require('path');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Collins Ilo' });
+  res.render('index', { title: 'Home Page' });
   // res.sendFile((path.join(__dirname, "../views/index.html")));
 });
 
-// router.get('/', function(req, res, next) {
-//   //res.render('index', { title: 'Express' });
-//   res.sendFile((path.join(__dirname, "../views/contact.html")));
-// });
+// get contact page
+router.get('/', function(req, res, next) {
+  res.render('contact', { title: 'Contact' });
+  // res.sendFile((path.join(__dirname, "../views/contact.html")));
+});
+
+// get portfolio page
+router.get('/', function(req, res, next) {
+  res.render('portfolio', { title: 'Portfolio' });
+  // res.sendFile((path.join(__dirname, "../views/contact.html")));
+});
+
 
 
 
