@@ -1,10 +1,11 @@
-$textcolour: #020a38;
+$textcolour: #0727da;
 $bgcolour: rgb(235, 225, 225);
 
 .container {
-   margin: center;
+   margin: 0 auto;
    max-width: 1200px;
    margin-top: 20px;
+//    padding: 3px;
 }
 
 * {
@@ -303,31 +304,31 @@ span{
     }
 }
 
+.talk {
+    font-size: 24px;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+    // color: $textcolour;
+}
+
 .content-two {
     font-family: 'Libre Baskerville', serif;
-    margin: 20px 0 60px 20px;
+    margin: 80px 0 60px 20px;
     padding: 10px;
 
-    h2 {
-        letter-spacing: 0.5px;
-        line-height: 36px;
-        color: $textcolour;
+    .bottom {
+        margin-top: 40px;
     }
 
-
-    h2 {
-        font-size: 24px;
-        font-family: 'Libre Baskerville', serif;
-        margin-bottom: 30px;
-        padding: 5px;
-        font-weight: bold;
-    }
-
-    
     h3 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
         color: $textcolour;
         font-size: 24px;
     }
@@ -346,7 +347,7 @@ span{
     margin: 0 auto;
     --offset: 10px;
     --border-size: 2px;
-    margin-top: 60px;
+    margin-top: 30px;
     display: block;
     position: relative;
     padding: 1.5em 3em;
@@ -364,7 +365,7 @@ span{
     transition: background .8s ease;
 
     &:hover {
-        background: rgba(100, 0, 0, .03);
+        background-color : rgba(8, 5, 5, 0.03);
     }
     
     &__horizontal,
@@ -427,16 +428,39 @@ span{
    .projects {
        margin-top: 10px;
        img {
+           display: block;
            width: 100%;
            padding: 3px;
-}
+           margin-bottom: 40px;
+        }
+
+        h2 {
+            color: $textcolour;
+            font-size: 24px;
+            font-family: 'Libre Baskerville', serif;
+            margin-bottom: 20px;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            line-height: 36px;
+        }
+
+        p {
+            padding: 3px;
+            line-height: 18px;
+            text-align: center;
+        }
 
    }
 
 }
 
 .mainFooter {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    padding: 4px;
+    background-color: slateblue;
+    border-radius: 5px;
     border-top: solid 0.5px rgb(119, 119, 253);
 
     ul {
@@ -455,7 +479,7 @@ span{
           }
           
           a:hover {
-            box-shadow: inset 0 -1.2em 0 hsla(261, 93%, 46%, 0.4);
+            box-shadow: inset 0 -1.2em 0 hsla(260, 79%, 96%, 0.4);
           }
           
           li:last-child {
@@ -503,6 +527,29 @@ span{
     
     }
 
+    // .content-two {
+    //     .projects {
+    //         // img {
+    //         //     height: 40vh;
+    //         // }
+    //     }
+    // }
+
+  }
+
+  @media screen and (min-width: 380px) {
+    .content-two {
+        .projects {
+            img {
+                height: 60vh;
+            }
+
+            p {
+                line-height: 22px;
+                padding: 5px;
+            }
+        }
+    }
   }
 
   @media screen and (min-width: 440px) {
@@ -519,25 +566,34 @@ span{
                 margin-top: 200px;
                 .navitem {
                   font-size: 18px;
-                  margin: 30px 10px 30px 10px;
+                  margin: 20px 10px 30px 10px;
                 }
             }
         }
     }
       .background {
-          margin-left: 50px;
+          margin-left: 80px;
       }
       .content-one {
         .text1 {
             line-height: 24px;
         }
       }
+
+      .content-two {
+          .projects {
+              p {
+                  text-align: center;
+              }
+          }
+      }
+
   }
 
   @media screen and (min-width: 660px) {
      .background {
         .loader {
-            margin-left: 60px;
+            margin-left: 120px;
             max-width: 20rem;
         }
      }
@@ -545,6 +601,21 @@ span{
           .info2 {
               flex-direction: row;
               justify-content: space-evenly;
+
+              .projects {
+                //   width: 100%;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-evenly;
+            
+                  img {
+                      height: 40vh;
+                      margin: 0 0 40px 0;
+                    // width: 100%;
+                    // padding: 3px;
+                    // margin-bottom: 10px;
+                 }
+              }
           }
 
           h2 {
@@ -624,6 +695,10 @@ span{
           }
       }
 
+      .talk {
+          font-size: 36px;
+      }
+
       .content-two {
           h2 {
               font-size: 36px;
@@ -652,19 +727,33 @@ span{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        // margin: 20px 0 20px 0;
+
+        h2 {
+            color: $textcolour;
+            font-weight: bold;
+        }
 
         .deets1 {
-            // justify-content: center;
-            align-items: center;
             width: 100%;
-            height: 40vh;
+            text-align: center;
+            // height: 40vh;
             padding: 3px;
-            margin: 20px 0 20px 0;
+            margin: 20px 0 60px 0;
 
             h2 {
                 margin: 20px 0 20px 0;
                 text-align: center;
+                // font-size: 18px;
+                // font-weight: bold;
+            }
+
+            p {
+                text-align: center;
+                padding: 4px;
+                margin: 10px 0 20px 20px;
+                font-size: 18px;
+                font-style: italic;
+                line-height: 22px;
             }
 
            
@@ -708,7 +797,7 @@ span{
             //     }
 
             a {
-                margin-left: 40px;
+                // margin-left: 40px;
                 width: 100px;
                 background: transparent;
                 color: #e55743;
@@ -732,11 +821,13 @@ span{
         }
 
         .deets2 {
-            align-items: center;
+            border-top: solid 1px $textcolour;
+            text-align: center;
+            // align-items: center;
             width: 100%;
-            height: 40vh;
+            // height: 40vh;
             padding: 3px;
-            margin: 20px 0 60px 0;
+            margin: 60px 0 60px 0;
 
             img {
                 width: 100%;
@@ -744,12 +835,20 @@ span{
             }
 
             h2 {
-                margin: 20px 0 20px 0;
+                margin: 40px 0 20px 0;
+            }
+
+            p {
+                text-align: center;
+                margin: 10px 0 20px 0;
+                font-size: 18px;
+                font-style: italic;
+                line-height: 22px;
             }
 
             a {
                 text-align: center;
-                margin-left: 40px;
+                // margin-left: 40px;
                 width: 100px;
                 background: transparent;
                 color: #e55743;
@@ -774,11 +873,13 @@ span{
     }
 
     .deets3 {
-        align-items: center;
+        border-top: solid 1px $textcolour;
+        text-align: center;
+        // align-items: center;
         width: 100%;
-        height: 40vh;
+        // height: 40vh;
         padding: 3px;
-        margin: 20px 0 20px 0;
+        margin: 60px 0 20px 0;
 
         img {
             width: 100%;
@@ -788,12 +889,20 @@ span{
 
         h2 {
             text-align: center;
-            margin: 20px 0 20px 0;
+            margin: 40px 0 20px 0;
+        }
+
+        p {
+            text-align: center;
+            margin: 10px 0 20px 0;
+            font-size: 18px;
+            font-style: italic;
+            line-height: 22px;
         }
 
         a {
             text-align: center;
-            margin-left: 40px;
+            // margin-left: 40px;
             width: 100px;
             background: transparent;
             color: #e55743;
@@ -821,13 +930,25 @@ span{
 }
 
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 360px) {
     .port-one {
         .box2 {
-            .deets {
-                height: 60vh;
+            h2 {
+                font-size: 22px;
             }
+
+            // p {
+            //     font-size: 24px;
+            //     line-height: 26px;
+            // }
         }
+    }
+}
+
+@media screen and (min-width: 420px) {
+    p {
+        font-size: 24px;
+        line-height: 26px;
     }
 }
 
@@ -839,8 +960,14 @@ span{
                 margin: 20px 0 10px 0;
                 text-align: center;
             }
-            .deets {
-                height: 80vh;
+
+            .video {
+                display: none;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                // width: 300px;
             }
         }
     }
@@ -850,34 +977,54 @@ span{
     .port-one {
         .box2 {
             h2 {
-                margin: 20px 0 10px 0;
+                margin: 40px 0 10px 0;
                 text-align: center;
             }
-            .deets {
-                height: 80vh;
+
+            // .deets2 {
+            //     .p-text {
+            //         height: 100px;
+            //     }
+            // }
+            .media {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin-top: 40px;
+                // height: 25vh;
+
+              
+
+                .p-text {
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding: 5px;
+                    margin-top: 80px;
+                    margin-left: 20px;
+                    height: 200px;
+                }
             }
+          
         }
     }
 }
 
-@media screen and (min-width: 720px) {
-    .port-one {
-        .box2 {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            h2 {
-                margin: 20px 0 10px 0;
-                text-align: center;
-            }
-            .deets {
-                height: 80vh;
-                // display: flex;
-                // flex-direction: row;
-                // justify-content: space-evenly;
-            }
+@media screen and (min-width: 840px) {
+  .box2 {
+    .boxes {
+        margin: 60px 0 60px 0;
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .desk {
+            width: 200px;
+            height: 200px;
+            background-color: $textcolour;
         }
     }
+  }
 }
 
 
@@ -904,7 +1051,7 @@ span{
     }
 
 }
-    
+
     input[type=text], select, textarea {
         width: 100%;
         box-shadow: inset -3px -3px 10px #eee;
@@ -949,47 +1096,48 @@ span{
           width: 60%;
       }
 
-@media screen and (min-width: 420px) {
-    .heading {
-        h2 {
-            font-size: 28px;
-            font-weight: bold;
+      @media screen and (min-width: 420px) {
+          .heading {
+              h2 {
+                  font-size: 28px;
+                  font-weight: bold;
+              }
+
+              p {
+                  font-size: 22px;
+              }
+          }
+      }
+
+      @media screen and (min-width: 520px) {
+          /* Create two columns that float next to eachother */
+            .column {
+                float: left;
+                width: 50%;
+                margin-top: 6px;
+                padding: 20px;
+
+                img {
+                    margin-top: 40px;
+                }
+            }
+  
+         /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+                }
+
+
+        @media screen and (min-width: 640px) {
+             input[type=submit] {
+                width: 60%;
+            }
+
+            img {
+                margin-right: 20px;
+            }
         }
-
-        p {
-            font-size: 22px;
-        }
-    }
-}
-
-@media screen and (min-width: 520px) {
-    /* Create two columns that float next to eachother */
-    .column {
-        float: left;
-        width: 50%;
-        margin-top: 6px;
-        padding: 20px;
-
-        img {
-            margin-top: 40px;
-        }
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
-@media screen and (min-width: 640px) {
-        input[type=submit] {
-        width: 60%;
-    }
-
-    img {
-        margin-right: 20px;
-    }
-}
+    
