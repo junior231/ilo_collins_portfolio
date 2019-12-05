@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 
+const sql = require('../utils/sql');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home Page' });
@@ -17,8 +19,10 @@ router.get('/', function(req, res, next) {
 // get portfolio page
 router.get('/', function(req, res, next) {
   res.render('portfolio', { title: 'Portfolio' });
-  // res.sendFile((path.join(__dirname, "../views/contact.html")));
+  // res.sendFile((path.join(__dirname, "../views/portfolio.html")));
 });
+
+router.get('/', (req, res))
 
 
 
