@@ -1,8 +1,8 @@
 console.log('JS linked.');
 
-gsap.to(".logo", {duration: 2, x:20, ease: "bounce"});
-gsap.to(".loader", {duration: 5, x:40, y:30});
-gsap.to(".hand", {duration: 2, rotation: 360, ease: "bounce"});
+// gsap.to(".logo", {duration: 2, x:20, ease: "bounce"});
+// gsap.to(".loader", {duration: 5, x:40, y:30});
+// gsap.to(".hand", {duration: 2, rotation: 360, ease: "bounce"});
 
 const burger  = document.querySelector('.burger'),
       bLine1  = document.querySelector('.line2'),
