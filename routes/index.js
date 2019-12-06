@@ -18,6 +18,16 @@ router.get('/contact', function(req, res, next) {
 
 // get portfolio page
 router.get('/portfolio', function(req, res, next) {
+
+  let query = `SELECT * FROM tbl_portfolio WHERE id="${req.params.target}"`;
+
+  sql.query(query, (err, result) => {
+    if (err) {  console.log(err); } // something done broke!
+
+    console.log(result); // this should be the database row
+
+    res.json(result[0]); // sedn that ow back to the calling function
+  })
   res.render('portfolio', { title: 'Portfolio' });
   // res.sendFile((path.join(__dirname, "../views/portfolio.html")));
 });
