@@ -13,11 +13,12 @@
                 <!-- <div class="box1"></div> -->
                 <div class="box2">
                     {{#each project}}
-                    <div class="deets1">
+                    <div class="deets{{ID}}">
                         <h2>{{ Title }}</h2>
-                        <img src="images/{{ Image }}" alt="image">
+                        <img src="images/{{ Images }}" alt="image">
 
-                        <a class="play" href="{{ ID }}">Watch Video</a>
+                        <button class="play" href="/video/{{ ID }}">Watch Video</button>
+                        <video class="hidden" src="/video/{{Video}}"></video>
 
                         <p class="para">{{ Description }}</p>
                     </div>
