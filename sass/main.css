@@ -237,7 +237,6 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60vh;
   padding: 0 4px 0 4px;
 }
 
@@ -375,7 +374,7 @@ span {
 
 .content-two {
   font-family: 'Libre Baskerville', serif;
-  margin: 80px 0 60px 20px;
+  margin: 30px 0 30px 20px;
   padding: 10px;
 }
 
@@ -678,6 +677,7 @@ span {
             justify-content: space-evenly;
   }
   .content-two .info2 .projects {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -689,7 +689,7 @@ span {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .content-two .info2 .projects .mashup {
+  .content-two .info2 .projects img {
     width: 100%;
   }
   .content-two h2 {
@@ -815,6 +815,16 @@ span {
 .port-one .box2 h2 {
   color: #0727da;
   font-weight: bold;
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+.port-one .box2 .para {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 22px;
 }
 
 .port-one .box2 .deets1 {
@@ -896,7 +906,7 @@ span {
   line-height: 22px;
 }
 
-.port-one .box2 .deets2 a {
+.port-one .box2 .deets2 .play {
   text-align: center;
   width: 100px;
   background: transparent;
@@ -910,12 +920,12 @@ span {
   text-transform: uppercase;
 }
 
-.port-one .box2 .deets2 a:hover {
+.port-one .box2 .deets2 .play:hover {
   background: rgba(85, 2, 2, 0.03);
   cursor: pointer;
 }
 
-.port-one .box2 .deets2 a:active {
+.port-one .box2 .deets2 .play:active {
   -webkit-box-shadow: none;
           box-shadow: none;
   top: 5px;
@@ -934,12 +944,12 @@ span {
   margin: 20px 0 30px 30px;
 }
 
-.port-one .box2 .deets3 h2 {
+.port-one .box2 .deets3 .Title {
   text-align: center;
   margin: 40px 0 20px 0;
 }
 
-.port-one .box2 .deets3 p {
+.port-one .box2 .deets3 .para {
   text-align: center;
   margin: 10px 0 20px 0;
   font-size: 18px;
@@ -967,6 +977,57 @@ span {
 }
 
 .port-one .box2 .deets3 a:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  top: 5px;
+}
+
+.port-one .box2 .deets4 {
+  border-top: solid 1px #0727da;
+  text-align: center;
+  width: 100%;
+  padding: 3px;
+  margin: 60px 0 20px 0;
+}
+
+.port-one .box2 .deets4 img {
+  width: 100%;
+  margin: 20px 0 30px 30px;
+}
+
+.port-one .box2 .deets4 .Title {
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.port-one .box2 .deets4 .para {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 22px;
+}
+
+.port-one .box2 .deets4 a {
+  text-align: center;
+  width: 100px;
+  background: transparent;
+  color: #e55743;
+  -webkit-box-shadow: 0 5px 0 #f71717;
+          box-shadow: 0 5px 0 #f71717;
+  color: black;
+  padding: 5px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.port-one .box2 .deets4 a:hover {
+  background: rgba(85, 2, 2, 0.03);
+  cursor: pointer;
+}
+
+.port-one .box2 .deets4 a:active {
   -webkit-box-shadow: none;
           box-shadow: none;
   top: 5px;

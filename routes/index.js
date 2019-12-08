@@ -16,6 +16,12 @@ router.get('/contact', function (req, res, next) {
   // res.sendFile((path.join(__dirname, "../views/contact.html")));
 });
 
+// get About Me page
+router.get('/about', function (req, res, next) {
+  res.render('about', { title: 'About Me' });
+  // res.sendFile((path.join(__dirname, "../views/about.html")));
+});
+
 // get portfolio page
 router.get('/portfolio', function (req, res, next) {
 
