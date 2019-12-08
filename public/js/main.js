@@ -9,7 +9,7 @@ const burger  = document.querySelector('.burger'),
       bLine2  = document.querySelector('.line3'),
       nav     = document.querySelector('.headNav'),
       header  = document.querySelector('.mainHeader');
-      playVideo = document.querySelector('#play'),
+      playVideo = document.querySelectorAll('.play'),
       lightBox = document.querySelector('.lightbox'),
       
       lightboxControls = document.querySelectorAll('.open-lightbox');
@@ -29,7 +29,7 @@ const burger  = document.querySelector('.burger'),
 	}
 
 	function hideLightbox() {
-		document.querySelectorAll('.lightbox').forEach(lightbox => lightbox.classList.remove('display'));
+		dlightbox.classList.remove('display');
 	}
     
     if (lightboxControls) {

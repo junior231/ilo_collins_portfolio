@@ -788,24 +788,48 @@ span {
           justify-content: space-evenly;
 }
 
+.port-one .box2 a {
+  width: 100px;
+  background: transparent;
+  color: #e55743;
+  -webkit-box-shadow: 0 5px 0 #f71717;
+          box-shadow: 0 5px 0 #f71717;
+  color: black;
+  padding: 5px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.port-one .box2 a:hover {
+  background: rgba(85, 2, 2, 0.03);
+  cursor: pointer;
+}
+
+.port-one .box2 a:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  top: 5px;
+}
+
 .port-one .box2 h2 {
   color: #0727da;
   font-weight: bold;
 }
 
 .port-one .box2 .deets1 {
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   padding: 3px;
   margin: 20px 0 60px 0;
 }
 
-.port-one .box2 .deets1 h2 {
+.port-one .box2 .deets1 .Title {
   margin: 20px 0 20px 0;
   text-align: center;
 }
 
-.port-one .box2 .deets1 p {
+.port-one .box2 .deets1 .para {
   text-align: center;
   padding: 4px;
   margin: 10px 0 20px 20px;
@@ -857,14 +881,14 @@ span {
 
 .port-one .box2 .deets2 img {
   width: 100%;
-  margin: 20px 0 30px 0;
+  margin: 20px 0 30px 30px;
 }
 
-.port-one .box2 .deets2 h2 {
+.port-one .box2 .deets2 .Title {
   margin: 40px 0 20px 0;
 }
 
-.port-one .box2 .deets2 p {
+.port-one .box2 .deets2 .para {
   text-align: center;
   margin: 10px 0 20px 0;
   font-size: 18px;
@@ -907,7 +931,7 @@ span {
 
 .port-one .box2 .deets3 img {
   width: 100%;
-  margin: 20px 0 30px 0;
+  margin: 20px 0 30px 30px;
 }
 
 .port-one .box2 .deets3 h2 {

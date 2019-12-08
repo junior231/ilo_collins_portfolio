@@ -14,16 +14,17 @@
                 <div class="box2">
                     {{#each project}}
                     <div class="deets{{ID}}">
-                        <h2>{{ Title }}</h2>
-                        <img src="images/{{ Images }}" alt="image">
+                        <h2 class="Title">{{ Title }}</h2>
+                        <img class="pictures" src="images/{{ Images }}" alt="image">
 
-                        <button class="play" href="/video/{{ ID }}">Watch Video</button>
+                        <button class="play" href="/video/{{ ID }}">View More</button>
                         <video class="hidden" src="/video/{{Video}}"></video>
 
                         <p class="para">{{ Description }}</p>
                     </div>
+                    {{/each}}
                 </div>
 
-                {{/each}}
+                
 
             </section>
