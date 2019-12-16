@@ -8,11 +8,24 @@ const burger  = document.querySelector('.burger'),
       bLine1  = document.querySelector('.line2'),
       bLine2  = document.querySelector('.line3'),
       nav     = document.querySelector('.headNav'),
-      header  = document.querySelector('.mainHeader');
-      playVideo = document.querySelectorAll('.play'),
+      header  = document.querySelector('.mainHeader'),
       lightBox = document.querySelector('.lightbox'),
+
+
+      function openLightbox(beforeVideo) {
+        lightBox.classList.add('lightbox-on');
+        video.load();
+        video.play();
+      }
+
+      function closeLightbox() {
+        lightBox.classList.remove('lightbox-on');
+        // rewind the video to the beginning
+        // and also pause it
+        video.currentTime = 0;
+        video.pause();
+      }
       
-      lightboxControls = document.querySelectorAll('.open-lightbox');
 
       function openNav(){
         console.log('Nav toggled.');
@@ -22,18 +35,9 @@ const burger  = document.querySelector('.burger'),
         nav.classList.toggle('open');
     }
 
-	function showLightbox(e) {
-		e.preventDefault();
-		hideLightbox ();
-		// this.nextElementSibling.classList.add('display');
-	}
 
-	function hideLightbox() {
-		dlightbox.classList.remove('display');
-	}
-    
-    if (lightboxControls) {
-		lightboxControls.forEach(button => button.addEventListener("click", showLightbox));
-    }
     
 burger.addEventListener('click', openNav);
+video.addEventListener('ended', closeLightbox);
+closeLB.addEventListener('click', closeLightbox);
+  
