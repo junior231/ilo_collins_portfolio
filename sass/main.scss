@@ -662,8 +662,9 @@ body{
 
     h2 {
         text-align: center;
-        font-size: 28px;
+        font-size: 34px;
         color: $textcolour;
+        transition: .5s ease;
     }
 
 
@@ -703,7 +704,8 @@ body{
 
         h2 {
             color: $textcolour;
-            font-weight: bold;
+            line-height: 30px;
+            font-size: 28px;
             margin: 20px 0 20px 0;
             text-align: center;
         }
@@ -861,6 +863,7 @@ body{
         .deets1 {
             article {
                 font-size: 28px;
+                line-height: 30px;
             }
             .media {
                 display: none;
@@ -870,6 +873,7 @@ body{
         .deets2, .deets3, .deets4, .deets5 {
             article {
                 font-size: 28px;
+                line-height: 30px;
             }
 
          

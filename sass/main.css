@@ -724,8 +724,10 @@ body {
 
 .port-one h2 {
   text-align: center;
-  font-size: 28px;
+  font-size: 34px;
   color: #0727da;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
 .port-one .box2 {
@@ -773,7 +775,8 @@ body {
 
 .port-one .box2 h2 {
   color: #0727da;
-  font-weight: bold;
+  line-height: 30px;
+  font-size: 28px;
   margin: 20px 0 20px 0;
   text-align: center;
 }
@@ -933,12 +936,14 @@ body {
   }
   .box2 .deets1 article {
     font-size: 28px;
+    line-height: 30px;
   }
   .box2 .deets1 .media {
     display: none;
   }
   .box2 .deets2 article, .box2 .deets3 article, .box2 .deets4 article, .box2 .deets5 article {
     font-size: 28px;
+    line-height: 30px;
   }
   .box2 .deets2 .junior1 > img, .box2 .deets3 .junior1 > img, .box2 .deets4 .junior1 > img, .box2 .deets5 .junior1 > img {
     width: 100%;
