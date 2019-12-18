@@ -763,7 +763,7 @@ body{
             }
             margin: 40px 0 40px 0;
             width: 80%;
-            .junior {
+            .junior1 {
                 max-width: 720px;
                 width: 100%;
                 flex: 1;
@@ -774,7 +774,7 @@ body{
                 line-height: 0;
               }
               
-              .junior > img {
+              .junior1 > img {
                 width: 200%;
                 padding: 20px;
                 height: calc(100% - 50vh);
@@ -782,7 +782,7 @@ body{
                 transition: .5s;
               }
               
-              .junior > span {
+              .junior1 > span {
                 font-size: 24px;
                 display: block;
                 text-align: center;
@@ -791,8 +791,8 @@ body{
                 line-height: 2.6;
               }
               
-              .junior:hover { flex: 1 1 50%; }
-              .junior:hover > img {
+              .junior1:hover { flex: 1 1 50%; }
+              .junior1:hover > img {
                 width: 100%;
                 height: 100%;
               }
@@ -810,7 +810,7 @@ body{
     .port-one {
         .box2 {
             .deets2, .deets3, .deets4, .deets5 {
-                .junior > img {
+                .junior1 > img {
                     width: 150%;
                     height: calc(50% - 25vh);
                     object-fit: cover; 
@@ -874,14 +874,14 @@ body{
 
          
           
-            .junior > img {
+            .junior1 > img {
                 width: 100%;
                 // height: calc(50% - 25vh);
                 object-fit: cover; 
                 transition: .5s;
               }
 
-              .junior > span {
+              .junior1 > span {
                 font-size: 24px;
                 display: block;
                 text-align: center;
