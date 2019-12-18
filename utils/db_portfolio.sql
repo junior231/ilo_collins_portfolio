@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 08, 2019 at 03:49 PM
+-- Generation Time: Dec 18, 2019 at 01:14 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -45,8 +45,8 @@ CREATE TABLE IF NOT EXISTS `tbl_portfolio` (
 
 INSERT INTO `tbl_portfolio` (`ID`, `Title`, `Images`, `Video`, `Description`, `Challenge`) VALUES
 (1, 'Sportsnet Ad', 'sportsnet.jpg', 'sportsnet.mp4', 'Create an ad for a monday night football game between Dallas Cowboys vs Chicago Cubs', 'Creating the entire model from scratch in Cinema 4D. Each piece of the stadium was built in the app. After creating each piece, putting together different pieces to create the entire project and rendering each frame out for the final video.'),
-(2, 'Thermo-Security', 'thermo.jpg', '', 'Build an indoor security device and app interface for an already existing brand ', 'Working in a group of 5 and having to deliver on different parts of the project. Had less than 48hrs to deliver the entire project.'),
-(3, 'Wine Mashup', 'mashup.svg', '', 'Create a Wine brand for a random company. ', 'Coming up with an appropriate idea for a wine brand for Kelloggs. Creating the Logo and creating a mock-up for an actual ad in a magazine.'),
+(2, 'Thermo-Security', 'thermo.jpg', '', 'Build an indoor security device and app interface for an already existing brand ', 'Working in a group of 5 and having to deliver on different parts of the project. Had less than 48hrs to deliver the entire project. Creating the logo, building the model from scratch in Cinema 4D and also creating a web site to showcase the brand.'),
+(3, 'Wine Mashup', 'mashup.jpg', '', 'Create a Wine brand for a random company. ', 'Coming up with an appropriate idea for a wine brand for Kelloggs. Creating the Logo and creating a mock-up for an actual ad in a magazine.'),
 (4, 'Interactive Infographic', 'infographic.jpg', '', 'Interactive infographic explaining the relationship between Vaping, Teenagers and early exposure by advert.', 'Sifting through numerous data and stats, simplifying the data and visually bringing the information to life graphically in a very easy to understand manner.'),
 (5, 'Organ Awareness ', 'organ_awareness.jpg', '', 'Organ revitalization campaign awareness.', 'Dabbling into the medical field and watching videos to understand the process of decellularization. Breaking the medical process step by step, preparing easy to understand visuals and information to bring full awareness to the medical process.');
 COMMIT;

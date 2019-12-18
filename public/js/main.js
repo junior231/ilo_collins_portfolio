@@ -8,26 +8,16 @@ const burger  = document.querySelector('.burger'),
       bLine1  = document.querySelector('.line2'),
       bLine2  = document.querySelector('.line3'),
       nav     = document.querySelector('.headNav'),
-      header  = document.querySelector('.mainHeader'),
-      lightBox = document.querySelector('.lightbox'),
+      playVideo = document.querySelector('#play'),
+      video = document.querySelector('video'),
+      closeLB = document.querySelector('.lightbox-close'),
+      header  = document.querySelector('.mainHeader');
 
 
-      function openLightbox(beforeVideo) {
-        lightBox.classList.add('lightbox-on');
-        video.load();
-        video.play();
-      }
-
-      function closeLightbox() {
-        lightBox.classList.remove('lightbox-on');
-        // rewind the video to the beginning
-        // and also pause it
-        video.currentTime = 0;
-        video.pause();
-      }
+      let lightboxControls = document.querySelectorAll('.open-lightbox');
       
 
-      function openNav(){
+      function openNav() {
         console.log('Nav toggled.');
 
         bLine1.classList.toggle('open');
@@ -35,9 +25,25 @@ const burger  = document.querySelector('.burger'),
         nav.classList.toggle('open');
     }
 
+    function showLightbox(e) {
+      e.preventDefault();
+  
+      hideLightbox ();
+      this.classList.add('display');
+  
+    }
+  
+    function hideLightbox() {
+      document.querySelectorAll('.lightbox').forEach(lightbox => lightbox.classList.remove('display'));
+   
+    }
+
+    if (lightboxControls) {
+      lightboxControls.forEach(button => button.addEventListener("click", showLightbox));
+    }
+
 
     
 burger.addEventListener('click', openNav);
-video.addEventListener('ended', closeLightbox);
-closeLB.addEventListener('click', closeLightbox);
+
   

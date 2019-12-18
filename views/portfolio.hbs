@@ -10,42 +10,25 @@
         </section>
 
             <section class="container port-one">
-                <!-- <div class="box1"></div> -->
+                <h2>Projects</h2>
                 <div class="box2">
                     {{#each project}}
                     <div class="deets{{ID}}">
-                        {{!-- <h2 class="Title">{{ Title }}</h2> --}}
                         <div class="junior">
                         <img src="images/{{ Images }}" alt="">
                         <span>{{ Title }}</span>
                         </div>
+                        <video src="/video/{{Video}}" muted autoplay controls></video>
+                    {{!-- <p>{{Description}}</p> --}}
+                    <h2>{{Description}}</h2>
+                    <article>{{Challenge}}</article>
 
-                        <div class="media">
-                            <div class="media-boxes"></div>
-                            <div class="media-boxes"></div>
-                            <div class="media-boxes"></div>
-                        </div>
+                    
+                        <button id="play" class="open-lightbox" href="/video/{{ ID }}">Watch Video</button>
+                        <button class="open-lightbox button-two" href="/video/{{ ID }}">View More</button>
 
-                           <div class="lightbox">
-                            <span class="lightbox-close">X</span>
-                            <!-- this will be dynamic shortly -->
-                            <video src="/video/{{Video}}" muted autoplay controls></video>
-                            </div>
-
-                         {{!-- <video class="video" src="/video/{{Video}}" muted autoplay controls></video> --}}
-
-                        <button class="play" href="/video/{{ ID }}">View More</button>
-
-                        {{!-- <p class="para">{{ Description }}</p> --}}
-                        {{!-- id="play" class="open-lightbox" href="#" --}}
                     </div>
                     {{/each}}
                 </div>
 
             </section>
-
-            {{!-- <section class="lightbox">
-            <span class="lightbox-close">X</span>
-            <!-- this will be dynamic shortly -->
-            <video src="video/House-Stark.mp4" muted autoplay controls></video>
-            </section> --}}
